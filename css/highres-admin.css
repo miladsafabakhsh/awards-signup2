@@ -1,0 +1,99 @@
+/**
+ * High-Res Upload Admin Styles
+ * Location: awards-signup/css/highres-admin.css
+ */
+
+.highres-admin-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.highres-admin-box table {
+    margin-top: 15px;
+}
+
+.highres-admin-box table img {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.highres-admin-box td {
+    vertical-align: middle;
+}
+
+.highres-upload-section {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.highres-upload-item {
+    transition: all 0.2s ease;
+}
+
+.highres-upload-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.upload-progress {
+    position: relative;
+}
+
+.upload-progress .progress-bar {
+    animation: progressPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes progressPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Button styles */
+.button.upload-highres-btn {
+    transition: all 0.2s ease;
+}
+
+.button.upload-highres-btn:hover {
+    background-color: #e68a00 !important;
+    border-color: #e68a00 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(249, 152, 0, 0.3);
+}
+
+.button.delete-highres-btn {
+    border-color: #dc3545;
+    transition: all 0.2s ease;
+}
+
+.button.delete-highres-btn:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .highres-upload-item > div {
+        flex-direction: column !important;
+    }
+    
+    .highres-upload-item > div > div:first-child {
+        flex: 1 1 auto !important;
+        max-width: 200px;
+        margin: 0 auto 15px auto;
+    }
+}

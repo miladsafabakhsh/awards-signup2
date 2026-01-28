@@ -1,0 +1,1 @@
+<?php echo wpautop(awards_options('dashboard_text'));?>
